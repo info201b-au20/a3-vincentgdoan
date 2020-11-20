@@ -76,18 +76,19 @@ trend_chart_part_two
 ```
 
 For my **trends over time chart**, I chose to include two line graphs that show
-the proportion of jail populations and the proportion of U.S populations over time, stratified
-by race. The reason I chose this chart is because it allows us to
-compare the proportions of populations by different groups of interest within a
-certain population, giving us meaningful insights. Specifically, it allows us to compare the proportion of
-populations in the jail to the general U.S population. Through these two
-graphs, we can see an alarming disparity between their proportions. Although 
-black populations make up a small proportion of the U.S population, they make up
-around **40%** of the population in jail systems. The only group that has a similar
-proportion in jail populations are Whites, which are a majority group. This highlights a
-problem in the United States, as individuals who are Black are incarcerated at a 
-similar rate as individuals who are White, although they make up a significantly
-smaller proportion of the total U.S population.
+the proportion of jail populations and the proportion of U.S populations over 
+time, stratified by race. The reason I chose this chart is because it allows us 
+to compare the proportions of populations by different groups of interest within
+a certain population, giving us meaningful insights. Specifically, it allows us 
+to compare the proportion of populations in the jail to the general U.S 
+population. Through these two graphs, we can see an alarming disparity between 
+their proportions. Although black populations make up a small proportion of the 
+U.S population, they make up around **40%** of the population in jail systems. 
+The only group that has a similar proportion in jail populations are Whites, 
+which are a majority group. This highlights a problem in the United States, as 
+individuals who are Black are incarcerated at a  similar rate as individuals who
+are White, although they make up a significantly smaller proportion of the total
+U.S population.
 
 
 ## Variable Comparison Chart
@@ -114,15 +115,16 @@ map
 
 For my **map** I chose to create a map of the United States, focusing on my own
 created variable, proportions of Black individuals in jail. I divided the
-`black_jail_pop` (population of Black individuals in jail) by the `total_jail_pop` (population of all individuals in Jail) in order to create this value. Each 
-state has a varying amount of blue color. A higher amount of blue correlates
-with a larger proportion of Black individuals in jail, in the most recent year.
-A lower amount of blue, or a higher amount of black, correlates with a smaller
-proportion of Black individuals in jail, in the most recent year. The reason I
-chose to use this is because it would allow us to see how different states
-have different proportions of incarcerated Blacks. Some patterns that emerge 
-from this analysis is that northern states seem to have lower proportions of
-Black individuals in their jail populations, while southern states, have higher
-proportions. In addition, states in the east coast also have higher proportions
-of Black individuals in jail. This may reflect systemtic racism in the judicial
-systems of these states, or racist policies that target Black individuals.
+`black_jail_pop` (population of Black individuals in jail) by the 
+`total_jail_pop` (population of all individuals in Jail) in order to create this
+value. Each state has a varying amount of blue color. A higher amount of blue 
+correlates with a larger proportion of Black individuals in jail, in the most 
+recent year. A lower amount of blue, or a higher amount of black, correlates 
+with a smaller proportion of Black individuals in jail, in the most recent year. 
+The reason I chose to use this is because it would allow us to see how different 
+state shave different proportions of incarcerated Blacks. Some patterns that 
+emerge from this analysis is that northern states seem to have lower proportions
+of Black individuals in their jail populations, while southern states, have 
+higher proportions. In addition, states in the east coast also have higher 
+proportions of Black individuals in jail. This may reflect systematic racism in 
+the judicial systems of these states, or racist policies that target Black 
