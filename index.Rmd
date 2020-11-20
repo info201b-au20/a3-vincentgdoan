@@ -1,0 +1,128 @@
+
+---
+title: "Assignment 3"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+source("analysis.R")
+```
+
+## Introduction + Summary Information
+Many believe that the Civil Rights Act of 1964 marked the end of racism in the
+United States. The legislation did indeed outlaw explicit discriminatory 
+practices on the basis of race, color, religion, sex and national origin, 
+however racism has endured and manifested itself in more quiet and insidious
+form. The documentary, [13th](https://www.youtube.com/watch?v=krfcq5pF8u8), by 
+*Ava DuVernay*, and book, [The New Jim Crow](https://newjimcrow.com), by 
+*Michelle Alexander*, both explore the mass incarceration of African Americans, 
+and the prison industrial complex as terrible manifestations of racism in the 
+20th century. Factors such as over-policing people of color and the war on drugs 
+have all contributed heavilytowards the disproportionate amount of people of 
+color in prison systems.
+
+This assignment serves to observe how data about county and incarcerated 
+populations can highlight the patterns of inequalities present in our current 
+jail and prison systems. In this project, I will be focusing upon the 
+`black_jail_pop` (population of Black individuals in jail) variable(s) and 
+performing analyses which highlight the disproportionate populations, by race, 
+within our jail systems.
+
+My summary analysis answers several questions & answers:
+
+- What is the **average value** of the population of Black individuals jail 
+across all the counties (in the most recent year)?
+
+```{r avg_value_black, echo = FALSE}
+avg_value_black
+```
+
+- What is the **highest value** of the population of Black individuals in jail 
+across all counties (in the most recent year)?
+
+```{r highest_value_black, echo = FALSE}
+highest_value_black
+```
+
+- What county(s) and state(s) is the population of Black individuals in jail the
+**highest** (in the most recent year)?
+
+```{r county_state_highest_black, echo = FALSE}
+county_state_highest_black
+```
+
+- What state(s) is the population of Black individuals in jail the **lowest** 
+(in the most recent year)?
+
+```{r state_lowest_black, echo = FALSE}
+state_lowest_black
+```
+
+- How much has the total population of Black individuals in jail across all 
+counties and states **changed over the last 5 years**?
+
+```{r change_five_year, echo = FALSE}
+change_five_year
+```
+
+## Trends Over Time Chart
+```{r trend_chart, echo = FALSE}
+trend_chart
+```
+
+```{r trend_chart_part_two, echo = FALSE}
+trend_chart_part_two
+```
+
+For my **trends over time chart**, I chose to include two line graphs that show
+the proportion of jail populations and the proportion of U.S populations over time, stratified
+by race. The reason I chose this chart is because it allows us to
+compare the proportions of populations by different groups of interest within a
+certain population, giving us meaningful insights. Specifically, it allows us to compare the proportion of
+populations in the jail to the general U.S population. Through these two
+graphs, we can see an alarming disparity between their proportions. Although 
+black populations make up a small proportion of the U.S population, they make up
+around **40%** of the population in jail systems. The only group that has a similar
+proportion in jail populations are Whites, which are a majority group. This highlights a
+problem in the United States, as individuals who are Black are incarcerated at a 
+similar rate as individuals who are White, although they make up a significantly
+smaller proportion of the total U.S population.
+
+
+## Variable Comparison Chart
+```{r variable_comparison_scatterplot, echo = FALSE}
+variable_comparison_scatterplot
+```
+
+For my **variable comparison chart** I chose to compare two continuous variables:
+`black_prison_adm_rate` (prison admission rates for Black individuals) and 
+`black_prison_pop_rate` (prison population rates for Black individuals). The 
+reason I selected these variables is because it provides us with an opportunity 
+to understand how increasing incarceration rates for Black individuals 
+ultimately creates a disproportionate population in U.S. prisons. We can see 
+through this scatterplot that there is a strong positive correlation between
+increasing prison admission rates for Black individuals, and an ever increasing
+prison population rate for Black individuals. This is an unfortunate pattern
+that continues to reinforce stereotypes and underlying forms of racism,
+continuously undermining Black individuals.
+
+# Map
+```{r map, echo = FALSE}
+map
+```
+
+For my **map** I chose to create a map of the United States, focusing on my own
+created variable, proportions of Black individuals in jail. I divided the
+`black_jail_pop` (population of Black individuals in jail) by the `total_jail_pop` (population of all individuals in Jail) in order to create this value. Each 
+state has a varying amount of blue color. A higher amount of blue correlates
+with a larger proportion of Black individuals in jail, in the most recent year.
+A lower amount of blue, or a higher amount of black, correlates with a smaller
+proportion of Black individuals in jail, in the most recent year. The reason I
+chose to use this is because it would allow us to see how different states
+have different proportions of incarcerated Blacks. Some patterns that emerge 
+from this analysis is that northern states seem to have lower proportions of
+Black individuals in their jail populations, while southern states, have higher
+proportions. In addition, states in the east coast also have higher proportions
+of Black individuals in jail. This may reflect systemtic racism in the judicial
+systems of these states, or racist policies that target Black individuals.
