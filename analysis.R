@@ -18,14 +18,16 @@ incarceration <- read.csv(
 # (in the most recent year)?
 avg_value_black <- incarceration %>%
   filter(year == max(year, na.rm = TRUE)) %>%
-  summarize(mean_jail_pop = mean(black_jail_pop, na.rm = TRUE))
+  summarize(mean_jail_pop = mean(black_jail_pop, na.rm = TRUE)) %>%
+  pull(mean_jail_pop)
 
 
 # What is the highest value of Black populations in jail across all counties (in
 # the most recent year)?
 highest_value_black <- incarceration %>%
   filter(year == max(year, na.rm = TRUE)) %>%
-  summarize(max_jail_pop = max(black_jail_pop, na.rm = TRUE))
+  summarize(max_jail_pop = max(black_jail_pop, na.rm = TRUE)) %>%
+  pull(max_jail_pop)
 
 # What county and state is the Black populations in jail the highest (in the
 # most recent year)?

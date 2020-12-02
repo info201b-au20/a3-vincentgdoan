@@ -4,7 +4,7 @@ title: "Assignment 3"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 source("analysis.R")
 ```
@@ -19,12 +19,14 @@ form. The documentary, [13th](https://www.youtube.com/watch?v=krfcq5pF8u8), by
 *Michelle Alexander*, both explore the mass incarceration of African Americans, 
 and the prison industrial complex as terrible manifestations of racism in the 
 20th century. Factors such as over-policing people of color and the war on drugs 
-have all contributed heavilytowards the disproportionate amount of people of 
+have all contributed heavily towards the disproportionate amount of people of 
 color in prison systems.
 
 This assignment serves to observe how data about county and incarcerated 
 populations can highlight the patterns of inequalities present in our current 
-jail and prison systems. In this project, I will be focusing upon the 
+jail and prison systems. I will be using the incarceration dataset, specifically 
+`incarceration_trends.csv` provided by the [Vera Institute](https://github.com/vera-institute/incarceration-trends), in order 
+to show patterns of inequality. In this project, I will be focusing upon the 
 `black_jail_pop` (population of Black individuals in jail) variable(s) and 
 performing analyses which highlight the disproportionate populations, by race, 
 within our jail systems.
@@ -34,36 +36,36 @@ My summary analysis answers several questions & answers:
 - What is the **average value** of the population of Black individuals jail 
 across all the counties (in the most recent year)?
 
-```{r avg_value_black, echo = FALSE}
-avg_value_black
+```{r avg_value_black, echo = FALSE, results='asis'}
+cat(avg_value_black)
 ```
 
 - What is the **highest value** of the population of Black individuals in jail 
 across all counties (in the most recent year)?
 
-```{r highest_value_black, echo = FALSE}
-highest_value_black
+```{r highest_value_black, echo = FALSE, results='asis'}
+cat(highest_value_black)
 ```
 
 - What county(s) and state(s) is the population of Black individuals in jail the
 **highest** (in the most recent year)?
 
-```{r county_state_highest_black, echo = FALSE}
-county_state_highest_black
+```{r county_state_highest_black, echo = FALSE, results='asis'}
+cat(county_state_highest_black)
 ```
 
 - What state(s) is the population of Black individuals in jail the **lowest** 
 (in the most recent year)?
 
-```{r state_lowest_black, echo = FALSE}
-state_lowest_black
+```{r state_lowest_black, echo = FALSE, results='asis'}
+cat(state_lowest_black)
 ```
 
 - How much has the total population of Black individuals in jail across all 
 counties and states **changed over the last 5 years**?
 
-```{r change_five_year, echo = FALSE}
-change_five_year
+```{r change_five_year, echo = FALSE, results='asis'}
+cat(change_five_year)
 ```
 
 ## Trends Over Time Chart
